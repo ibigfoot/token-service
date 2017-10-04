@@ -26,7 +26,7 @@ exports.fetchToken = function (org_id, callback) {
          callback(err, null);
       }
       if (res && (res.statusCode === 200 || res.statusCode === 201)) {
-         callback(null, body);
+         callback(err, body);
       }
    });
 }
