@@ -5,7 +5,7 @@ var request = require('request');
 /*
 Function will call the tokenService dyno to retrieve a valid access token for the given org_id
 */
-exports.fetchToken = function (org_id, callback) {
+exports.fetchToken = (org_id, callback) => {
 
    var json = {
       "org_id": org_id
@@ -20,7 +20,7 @@ exports.fetchToken = function (org_id, callback) {
       json: json
    };
 
-   request(options, function(err, res, body) {
+   request(options, (err, res, body) => {
       if (err) {
          console.log(err);
          callback(err, null);
