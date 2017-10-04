@@ -1,5 +1,5 @@
 {
-  "name": "token-service",
+  "name": "control-tower-token-service",
   "version": "1.0.0",
   "description": "A simple helper that leverages the Control Tower Token service. Not something you would use generally.",
   "main": "index.js",

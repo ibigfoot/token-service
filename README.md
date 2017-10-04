@@ -3,7 +3,7 @@
 Usage
 
 ```
-const token-service = require('token-service');
+const token-service = require('control-tower-token-service');
 
 var org_id = 'SOME SALESFORCE ORG ID';
 
